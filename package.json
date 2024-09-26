@@ -1,0 +1,22 @@
+{
+  "name": "techsym",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/server.js",
+    "dev":"npx tsc -w && npm start",
+    "build":"npx tsc -t index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "@types/typescript": "^2.0.0",
+    "express": "^4.21.0",
+    "prisma": "^5.20.0",
+    "typescript": "^5.6.2"
+  }
+}

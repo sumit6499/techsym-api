@@ -1,0 +1,10 @@
+#dependecies
+node_modules
+
+
+#.envs
+.env
+.env.local
+
+#builds
+dist
