@@ -1,7 +1,7 @@
 interface SuccessMsgWithData{
     success:boolean,
     msg:string,
-    data:any
+    data:unknown
 }
 
 

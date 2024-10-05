@@ -8,6 +8,8 @@ const PORT= process.env.PORT||3000
 
 //middlewares
 app.use(cors())
+app.use(express.urlencoded({extended:true,limit:'30mb'}))
+app.use(express.json({limit:'30mb'}))
 app.use("/api/v1/events",eventRoutes)
 
 
@@ -18,6 +20,7 @@ app.get("/",(req:Request,res:Response)=>{
         msg:"Hello from server"
     }))
 })
+
 
 app.listen(PORT,()=>{
     console.log("server running on port 3000");
